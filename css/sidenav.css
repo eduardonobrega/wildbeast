@@ -1,11 +1,12 @@
 .sidenav {
-    justify-self: center;
     padding: 3rem;
+    background-color: #fafbfc;
 }
 
 .sidenav ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 3rem;
 }
 
@@ -28,4 +29,33 @@
 .sidenav-item a img {
     width: 10rem;
     min-width: 6rem;
+}
+
+@keyframes seta {
+    from {
+        right: 30px;
+    }
+    to {
+        right: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .sidenav {
+        overflow: auto;
+        position: relative;
+    }
+
+    .sidenav::after {
+        content: "→";
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        color: rgba(0, 0, 0, 0.3);
+        animation: seta 0.5s ease-in 0s infinite alternate;
+    }
+
+    .sidenav ul {
+        flex-direction: row;
+    }
 }

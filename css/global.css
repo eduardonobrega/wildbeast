@@ -20,6 +20,7 @@ video {
     display: block;
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 body,
@@ -34,7 +35,6 @@ textarea {
 }
 
 body {
-    background-color: #fafbfc;
     min-height: 100vh;
     line-height: 1.5;
 }
@@ -75,4 +75,25 @@ ul {
 
 .footer {
     grid-area: footer;
+}
+
+@media (max-width: 1200px) {
+    .estrutura {
+        grid-template-areas:
+            "header header header"
+            "sidenav content content"
+            "sidenav anuncios anuncios"
+            "footer footer footer";
+    }
+}
+@media (max-width: 760px) {
+    .estrutura {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "sidenav"
+            "content"
+            "anuncios"
+            "footer";
+    }
 }

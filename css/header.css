@@ -16,10 +16,11 @@
 .header nav ul a {
     color: #fff;
     background: rgba(0, 0, 0, 0.1);
+    text-transform: lowercase;
 
     border-radius: 5px;
     padding: 1rem;
-    transition: .1s;
+    transition: 0.1s;
     display: block;
 }
 
@@ -30,5 +31,8 @@
 @media (max-width: 600px) {
     .header {
         grid-template-columns: 1fr;
+    }
+    .header nav ul {
+        gap: 1rem;
     }
 }
