@@ -1,0 +1,10 @@
+.anuncios {
+    padding: 3rem;
+
+    display: grid;
+    align-content: start;
+    gap: 3rem;
+}
+
+.anuncios img {
+}
