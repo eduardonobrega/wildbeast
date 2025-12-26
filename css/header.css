@@ -1,0 +1,34 @@
+.header {
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.header nav ul a {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+
+    border-radius: 5px;
+    padding: 1rem;
+    transition: .1s;
+    display: block;
+}
+
+.header nav ul a:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    .header {
+        grid-template-columns: 1fr;
+    }
+}
