@@ -1,0 +1,31 @@
+.sidenav {
+    justify-self: center;
+    padding: 3rem;
+}
+
+.sidenav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sidenav-item {
+    display: block;
+    width: fit-content;
+    padding: 2rem;
+
+    background-color: #fff;
+
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+    border-radius: 5px;
+    transition: 0.1s ease-out;
+}
+
+.sidenav-item:hover {
+    background-color: #b07dfb;
+}
+
+.sidenav-item a img {
+    width: 10rem;
+    min-width: 6rem;
+}
